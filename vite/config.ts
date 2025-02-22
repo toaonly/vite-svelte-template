@@ -1,4 +1,5 @@
 import { sveltekit } from '@sveltejs/kit/vite'
+import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 import type { Alias, PluginOption } from 'vite'
 
@@ -15,5 +16,5 @@ export const configDefaults = {
     ] as Alias[],
   },
 
-  plugins: [sveltekit()] as PluginOption[],
+  plugins: [sveltekit(), tailwindcss()] as PluginOption[],
 }
